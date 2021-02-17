@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAD LIBS</title>
+</head>
+<style>
+    body{
+        background: black;
+        justify-content: center;
+        align-items: center;
+    }
+    .blank{
+        background: grey;
+        color: white;
+        text-align: center;
+        margin: 5% 30%;
+        padding: 20px;
+    }
+    h1{
+        font-size: 60px;
+    }
+    p, h2{
+        font-size: medium;
+        text-emphasis: none;
+        display: inline;
+    }
+</style>
+<body>
+    <div class="blank">
+    <div class="c1">
+        <h1>A Day At The Zoo</h1><br>
+    </div>
+    <div class="c2">
+        <p>Today I went to the zoo. 
+            I saw a(n) <h2 id="adj"></h2> <h2 id="n"></h2> jumping up and down in its tree.
+            He <h2 id="vp"></h2> <h2 id="adv"></h2> through the large tunnel that led to its <h2 id="adj1"></h2> <h2 id="n1"></h2>. 
+            I got some peanuts and passed them through the cage to a gigantic gray <h2 id="n2"></h2> towering above my head. 
+            Feeding that animal made me hungry.
+            I went to get a <h2 id="adj2"></h2> scoop of ice cream.
+            Afterwards I had to <h2 id="v"></h2> <h2 id="adv1"></h2> to catch our bus.
+            When I got home I <h2 id="vp1"></h2> my mom about my <h2 id="adj3"></h2> day at the zoo. </p>
+    </div>
+    </div>
+
+    <script>
+
+        function game(){
+
+
+        var start = alert("Welcome to Mad Libs!");
+        var a = prompt("Enter an adjective:");
+        var b = prompt("Enter a noun:");
+        var c = prompt("Enter a past tense verb:");
+        var d = prompt("Enter an adverb:");
+        var dd = prompt("Enter an adjective:");
+        var e = prompt("Enter a noun:");
+        var f = prompt("Enter a noun:");
+        var ff = prompt("Enter an adjective:");
+        var g = prompt("Enter a verb:");
+        var h = prompt("Enter an adverb:");
+        var i = prompt("Enter a past tense verb:");
+        var j = prompt("Enter an adjective:");
+
+                    if (a == null || a == ""){
+                        txt = ("(You did not fill out this field.)")
+                    } else {
+                        txt = a;
+                    }
+
+                    if (b == null || b == ""){
+                        txt1 = ("(You did not fill out this field.)")
+                    } else {
+                        txt1 = b;
+                    }
+
+                    if (c == null || c == ""){
+                        txt2 = ("(You did not fill out this field.)")
+                    } else {
+                        txt2 = c;
+                    }
+
+                    if (d == null || d == ""){
+                        txt3 = ("(You did not fill out this field.)")
+                    } else {
+                        txt3 = d;
+                    }
+
+                    if (dd == null || dd == ""){
+                        txt33 = ("(You did not fill out this field.)")
+                    } else {
+                        txt33 = dd;
+                    }
+
+                    if (e == null || e == ""){
+                        txt4 = ("(You did not fill out this field.)")
+                    } else {
+                        txt4 = e;
+                    }
+
+
+                    if (f == null || f == ""){
+                        txt5 = ("(You did not fill out this field.)")
+                    } else {
+                        txt5 = f;
+                    }
+
+                    if (ff == null || ff == ""){
+                        txt55 = ("(You did not fill out this field.)")
+                    } else {
+                        txt55 = ff;
+                    }
+
+                    if (g == null || g == ""){
+                        txt6 = ("(You did not fill out this field.)")
+                    } else {
+                        txt6 = g;
+                    }
+
+                    if (h == null || h == ""){
+                        txt7 = ("(You did not fill out this field.)")
+                    } else {
+                        txt7 = h;
+                    }
+
+                    if (i == null || i == ""){
+                        txt8 = ("(You did not fill out this field.)")
+                    } else {
+                        txt8 = i;
+                    }
+
+                    if (j == null || j == ""){
+                        txt9 = ("(You did not fill out this field.)")
+                    } else {
+                        txt9 = j;
+                    }
+
+
+                    document.getElementById("adj").innerHTML = txt;
+                    document.getElementById("n").innerHTML = txt1;
+                    document.getElementById("vp").innerHTML = txt2;
+                    document.getElementById("adv").innerHTML = txt3;
+                    document.getElementById("adj1").innerHTML = txt33;
+                    document.getElementById("n1").innerHTML = txt4;
+                    document.getElementById("n2").innerHTML = txt5;
+                    document.getElementById("adj2").innerHTML = txt55;
+                    document.getElementById("v").innerHTML = txt6;
+                    document.getElementById("adv1").innerHTML = txt7;
+                    document.getElementById("vp1").innerHTML = txt8;
+                    document.getElementById("adj3").innerHTML = txt9;
+                }
+                game();
+    </script>
+
+</body>
+</html>
